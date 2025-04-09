@@ -1,0 +1,167 @@
+@media(max-width: 1300px)
+{
+    .Information_Classes
+    {
+        display:none;
+    }
+}
+@media(max-width: 920px)
+{
+    .content
+    {
+        margin-left: 5% !important;
+        margin-right: 2% !important;
+        font-size: 14px !important;
+    }
+    .Classes_img .img1 span {
+       
+        font-size: 16px !important;
+        
+    }
+    .Classes_img
+    {
+        font-size:16px !important;
+    }
+    .Classes_img img
+    {
+        display:flex;
+        width: 150px !important;
+        
+    }
+    .img1
+{
+    padding-right: 5% !important;
+}
+}
+@media(max-width: 500px)
+{
+    .Classes_img img
+    {
+        display:flex;
+       width: 100px !important;
+        
+    }
+}
+@media(max-width: 480px)
+{
+    
+    .Classes_img .img1 span {
+       
+        font-size: 16px !important;
+        
+    }
+    .img1
+{
+    padding-right: 0% !important;
+}
+}
+
+.Information_Classes
+{
+    position: relative; 
+    transition: transform 0.3s ease; /* Плавный переход для анимации */
+    
+/* Текст */
+font-family: "Open Sans";
+font-size: 20px;
+font-weight: 400;
+margin-left:106px;
+margin-right:63px;
+float: left;
+
+padding-bottom: 5000px;
+
+}
+a{
+    color:black;
+}
+a:hover
+{
+    transition: 0.3s;
+    color:#004868;
+}
+h3{
+    text-align: left;
+    
+}
+.Classes_img {
+    
+    text-align:left;
+}
+
+
+.img1 {
+    
+    
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.Classes .content {
+    display: none; 
+    margin-top: 10px; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.Classes{
+    float:center;
+    margin: 0 auto;
+    
+}
+.Classes_img
+{
+   
+    display:flex;
+    margin-top:10px;
+    margin-right: 55%;
+    margin-left: 0px;
+}
+.img1
+{
+    padding-right: 10%;
+}
+.Classes_img .img1 span {
+     Display:block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+.Links_Classes
+{
+    font-family:"Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    color:black;
+}
+.Links_Classes:hover {
+    color:#004868;
+}
+.Classes .content {
+    font-family: "Open Sans", sans-serif;
+    font-size:20px;
+    margin-left: 35%;
+    margin-right: 18%;
+    display: none; /* Скрываем текст по умолчанию */
+    margin-top: 10px;
+    
+    
+}
+
+.toggle-button {
+    
+    border: none;
+    background: transparent;
+    
+}
+.Information_But
+{
+    border:none;
+    background: transparent;
+}
+.toggle-button:hover {
+    color: #004868; /* Цвет кнопки при наведении */
+}

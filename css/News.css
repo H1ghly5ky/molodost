@@ -1,0 +1,52 @@
+@media(max-width: 1200px)
+{
+   
+}
+.news-item {
+    display: flex; /* Используем Flexbox для выравнивания */
+    margin-bottom: 20px; /* Отступ между новостями */
+    margin-left:20%;
+    margin-right:18%;
+}
+
+.image {
+    width: 300px; /* Фиксированная ширина для изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-height: 300px; /* Ограничиваем максимальную высоту, чтобы избежать искажения */
+    margin-right: 20px; /* Отступ справа от изображения */
+    object-fit: cover; 
+}
+
+.text_b {
+    max-width: calc(100% - 170px);
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    margin-left: 0; /* Убираем левый отступ, так как используем Flexbox */
+}
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: row; /* Оставляем направление в строку для мобильных устройств */
+    }
+
+    .image {
+        width: 120px; /* Уменьшаем ширину изображения на мобильных устройствах */
+        margin-right: 15px;
+        max-height: 120px; /* Уменьшаем отступ справа */
+    }
+
+    .text_b {
+        max-width: calc(100% - 120px); /* Увеличиваем ширину текстового блока */
+        font-size: 18px; /* Уменьшаем размер шрифта для мобильных */
+    }
+}
+
+@media (max-width: 600px) {
+    .image {
+        display:none; /* Дополнительное уменьшение ширины изображения для очень маленьких экранов */
+    }
+
+    .text_b {
+        max-width: 100%;
+        font-size: 16px; /* Дополнительное уменьшение размера шрифта */
+    }
+}

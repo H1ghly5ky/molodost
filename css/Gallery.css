@@ -1,0 +1,20 @@
+.Information_Classes
+{
+    color:#004868;
+/* Текст */
+font-family: "Open Sans";
+font-size: 20px;
+font-weight: 400;
+margin-left:106px;
+margin-right:63px;
+float: left;
+padding-bottom: 4200px !important;
+
+}
+.img1 {
+    
+    
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 8% !important;
+}

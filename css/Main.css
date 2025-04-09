@@ -1,0 +1,544 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cricket&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@font-face {
+    font-family: 'Cricket';
+    src: url('fonts/cricket.ttf') format('truetype');
+}
+@media(min-width: 1300px)
+{
+    .hz{
+        margin-top: 6%;
+    }
+}
+@media(max-width: 1020px)
+{
+   .AClasses_img .img1 span{
+    font-size: 16px !important;
+   }
+    .number_in_header{
+        width:200px;
+        margin-left: auto !important; /* Adjusted to prevent shifting */
+        margin-top: 1% ;
+    }
+    
+    .MainPik
+    {
+        width:60% !important;
+    }
+    header nav
+    {
+        display:none;
+        flex-direction: column;
+        position: fixed;
+        margin-top:0%;
+        margin-left: 26.5%;
+        z-index: 50;
+        overflow-y: auto;
+        width: 300px;
+        background-color: #13B4DD;
+    }
+    header nav ul{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .burger {
+        display: flex !important; /* Show burger */
+        margin-right: 4%; /* Ensure alignment */
+    }
+}
+
+@media(max-width: 910px)
+{
+    .number_in_header
+    {
+        font-size:15px !important;
+        width: 150px;
+        margin-top:2.5%;
+        margin-left:auto !important; /* Adjusted to prevent shifting */
+    }
+    .Molodost
+    {
+        margin-top: 5% !important;
+        font-size:30px !important;
+        
+    }
+    .under_molodost
+    {
+        font-size: 12px !important;
+    }
+    .SchedPik
+    {
+        width: 50% !important;
+        font-size: 12px !important;
+    }
+    .schedazn
+    {
+        font-size: 12px !important;
+    }
+    .footer .Logo
+    {
+        font-size : 20px !important;
+    }
+    .footer .Podlogo
+    {
+        font-size: 12px !important;
+    }
+    .Text_footer img
+    {
+        width: 12px !important;
+    }
+    .Text_footer p
+    {
+        font-size: 12px !important
+    }
+    .Text_footer_right img
+    {
+        width: 12px !important;
+    }
+    .Text_footer_right p
+    {
+        font-size: 12px !important;
+    }
+   .schedazn
+{
+    padding-left: 20% !important;
+   
+}
+header nav
+{
+    margin-left:18% !important;
+}
+}
+
+@media(max-width:720px)
+{
+    .Download
+    {
+        display:none;
+    }
+    .MainPik
+    {
+        margin: 0 auto;
+    }
+    header nav
+    {
+        margin-left:1% !important;
+    }
+}
+@media(max-width: 600px)
+{
+    .LogoAll .Podlogo
+    {
+        width:200% !important;
+        font-size: 14px !important;
+    }
+    .AClasses_img .img1 span{
+        font-size: 12px !important;
+       }
+}
+@media(max-width:480px)
+{
+    .burger{
+        z-index: 1000 !important;
+    }
+    .Address
+    {
+        font-size: 12px !important;
+    }
+    .fp
+    {
+        display: none;
+    }
+    .AClasses_img .img1 span{
+        font-size: 10px !important;
+       }   
+    .schedazn
+    {
+        font-size:10px !important;
+    }
+    .Text_footer p
+    {
+        font-size: 8px !important;
+    }
+    .footer img{
+        width: 8px !important;
+    }
+    .Text_footer_right{
+        font-size: 8px !important;
+    }
+    h1{
+        font-size:22px !important;
+    }
+    p
+    {
+        font-size : 16px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    .jiv
+    {
+        display: none;
+    }
+    
+    .footer .Podlogo
+    {
+        display: none;
+    }
+    
+}
+.num{
+    font-family: "Open Sans", sans-serif;
+    margin-right:10%;
+}
+@media(max-width: 420px)
+{
+    .number_in_header{
+        
+        margin-left: 15% !important;
+        width:500px;
+        margin-top:8% !important;
+        font-size:12px !important;
+       
+    }
+    .Molodost
+    {
+        margin-top:12% !important;
+    }
+    .Logo .under_molodost
+    {
+        text-align: center;
+        padding-left: 20px !important;
+    }
+    .Logo .under_molodost img{
+        width:8px !important
+    }
+    .Address
+    {
+        font-size: 14px !important;
+        flex-direction: column !important;
+    }
+    .Address .right
+    {
+        margin-left: 20% !important;
+    }
+    .burger span{
+        height: 2px !important;
+        width:20px !important;
+    }
+}
+.open{
+    display:flex !important;
+}
+.burger{
+    float:right;
+    margin-top:4%;
+    margin-right:4%;
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+.burger span{
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #004868;
+}
+
+.burger::before, .burger::after
+{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #004868;
+    transition: all 0.3s ease 0s;
+}
+.burger::before{top: 0}
+.burger::after{bottom:0}
+.burger.active span
+{
+    transform: scale(0);
+}
+.burger.active::before
+{
+    top:50%;
+    transform: rotate(-45deg) translate(0,-50%);
+}
+.burger.active::after
+{
+    bottom:50%;
+    transform: rotate(45deg) translate(0,50%);
+}
+html
+{
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+body
+{
+    background-image: url(/picture/main_pagePic/background.jpg);   
+    background-size: cover; 
+    background-position: center; 
+    min-height: 20vh; 
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+a:hover
+{
+    transition: 0.3s;
+    color:#004868;
+}
+h1
+{
+    font-family: "Cricket", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color:#004868;
+    text-align: center;
+    margin-bottom: 3%;
+    width: 100%;
+}
+h3 {
+    font-family: "Cricket", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    margin-left: 20px;
+    font-style:italic;
+}
+p
+{
+    font-family:"Open sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.pik
+{
+    width: 14px;
+    height: 14px;
+}
+.MainPik
+{
+    width: 75%;
+    height:75%;
+    display: block;
+}
+.Address
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    margin: 25px auto;
+    max-width: 1440px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left {
+    text-align: left;
+    margin-left: 10%;
+}
+.right {
+    text-align: right;
+    margin-right: 10%;
+}
+.wrapper{
+    width: 100%;
+}
+header{
+    height: 100px;
+    background-color: #13B4DD;
+}
+.container{
+    max-width:1440px;
+    margin: 0 auto;
+    height: 100px;
+    display:flex;
+}
+.Logo
+{
+    padding-top: 1.8%;
+    width: 377px;
+    height: 55px;
+    margin-left:1.5%;
+    line-height: 0.9;
+}
+.Logo .Molodost 
+{
+    font-family: "Lobster", sans-serif;
+    font-size: 40px;
+    margin-left: 15%;
+    color: #004868;
+}
+.Logo .under_molodost
+{
+    font-family: "Open Sans", sans-serif;
+    font-size:120%;
+    color: #6A373E;
+}
+.number_in_header
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 120%;
+    padding-top: 2.5%;
+}
+.number_in_header img
+{
+    width:15%;
+    height: auto;
+}
+.navigation{
+    width:60%;
+    font-family:"Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navigation nav 
+{
+    padding-top:2%;
+}
+.navigation nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+}
+.btn a
+{
+    color:#004868;
+    text-decoration: none;
+    transition: color 0.6s;
+}
+.btn a:hover
+{
+    width: 96px;
+    height: 33px;
+    padding: 8px 12px;
+    align-items: center;
+    border-radius: 10px;
+    border: 0.5px solid  #004868;
+    background: #fff;
+}
+.All_Information
+{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.All_Information .Download
+{
+    font-family: "Open Sans", sans-serif;
+    float: left;
+    margin-right: 50px;
+    margin-left: 40px;
+    font-size: 14px;
+}
+.Download .D_btn
+{
+    padding-left:  30px;
+    color:#004868;
+    text-decoration: none;
+    transition: color 0.3;
+}
+.Info_main
+{
+    margin-left:15%;
+    margin-right:12%;
+}
+.jiv
+{
+    margin-top: 20px;
+    width:30%;
+    height: 30%;
+    float:left;
+    margin-right: 2%;
+}
+.novostiH
+{
+    margin-top: 32px;
+    font-family: "Cricket", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom:20px;
+}
+.AClasses_img {
+    width: 100%;
+    margin-left: 10%;
+    display: flex; 
+    flex-direction: row; /* Горизонтальное расположение */
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20%;
+}
+.no-scroll {
+    overflow: hidden; /* Блокирует прокрутку */
+}
+.img1 {
+    padding-right: 8%; 
+    max-width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+}
+.AClasses_img .img1 img {
+    width: 80%; 
+    height: auto; 
+}
+.AClasses_img .img1 span {
+    display: block;
+    font-family: "Cricket", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 80%; 
+    overflow: hidden;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    text-overflow: ellipsis;
+}
+.schedazn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    padding-left: 20%;
+    color: black;
+    font-style: italic;
+    text-align: center; 
+}
+.footer {
+    width: 100%; 
+    min-height: 100px; 
+    margin-top: 5%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+    background-color: #13B4DD; 
+    color: #004868; 
+}
+.Text_footer, .Text_footer_right {
+    display: flex;
+    flex-direction: column; 
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+.contact-item {
+    display: flex; 
+    align-items: center; 
+    margin: 5px 0; 
+}
+.contact-item img {
+    margin-right: 10px; 
+}
+.footer .Logo {
+    font-size: 24px; 
+    font-family: "Cricket", sans-serif;
+    font-size: 40px;
+    margin-left: 20%;
+}
+.footer .Podlogo {
+    color: #6A373E;
+    display: flex;
+    flex-direction: column; 
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
