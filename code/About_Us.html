@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/Main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/картинки/favicon.ico" type="image/png">
+    <title>Центр детского творчества и развития</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="Address">
+            <div class="left">
+                <span>
+                    <img class="pik"src="/Фото контакты/Гео.png">
+                    г. Хабаровск, Тихоокеанская 204, офис 901</span>
+            </div>
+            <div class="right">
+                <img class="pik" src="/Фото контакты/Звонок.png">
+                <span>+7(4212)24-31-10</span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="Logo">
+                    <div class="Molodost">
+                        МОЛОДОСТЬ
+                    </div>
+                    <div class="under_molodost">
+                        центр детского творчества и развития
+                    </div>
+                </div>
+                <div class="number_in_header" >
+                    <img src="/Фото контакты/Звонок.png" alt="Звонок">
+                    24-31-10
+                </div>
+                <div class="navigation">
+                    <nav>
+                        <ul>
+                            <li class="btn"><a href="/index.html">Главная</a></li>
+                            <li class="btn"><a href="/code/News.html">Новости</a></li>
+                            <li class="btn"><a href="/code/Classes.html">Занятия</a></li>
+                            <li class="btn"><a href="/code/Schedule.html">Расписание</a></li>
+                            <li class="btn"><a href="/code/Gallery.html">Галерея</a></li>
+                            <li class="btn"><a href="/code/About_Us.html">О нас</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="burger">
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <h1>О нас</h1>
+        <div class="All_Information">
+            <div class="Info_main">
+                <div class="Novosti"> 
+              <div>
+                  <img class="jiv" src="/picture/about_us/О_нас.jpg" alt="О нас">
+              </div>
+              <div style="margin-bottom: 300px;" class="Novosti_text">
+                  <p>Добро пожаловать в Центр детского творчества и развития <strong>"Молодость"</strong> — место, где каждый ребенок может раскрыть свои таланты и найти свое призвание! Мы верим, что творчество является важной частью развития личности, и стремимся создать атмосферу, способствующую самовыражению, обучению и вдохновению.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="Text_footer">
+            <p class="contact-item">
+                <img src="/Фото контакты/Гео.png" alt="Географическое местоположение"> 
+                г. Хабаровск, Тихоокеанская 204, офис 901
+            </p>
+            <p class="contact-item">
+                <img src="/Фото контакты/Звонок.png" alt="Телефон"> 
+                +7(4212)24-31-10
+            </p>
+        </div>
+        <div class="fp">
+            <span class="Logo">МОЛОДОСТЬ</span>
+            <div class="Podlogo">
+                центр детского творчества и развития
+            </div>
+        </div>
+        <div class="Text_footer_right">
+            <div class="contacts">
+                <p class="contact-item">
+                    <img src="/Фото контакты/Whatsapp.png" alt="Whatsapp"> 
+                    +7 (914) 180-28-83
+                </p>
+                <p class="contact-item">
+                    <img src="/Фото контакты/Mail.png" alt="почта"> 
+                    molodost.khv@mail.ru
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('open');
+            const numberInHeader = document.querySelector('.number_in_header');
+            if (nav.classList.contains('open')) {
+                document.body.classList.add('no-scroll'); // Добавляем класс, чтобы заблокировать прокрутку
+                numberInHeader.style.display = 'none'; // Hide number_in_header when burger is open
+            } else {
+                document.body.classList.remove('no-scroll'); // Убираем класс, чтобы разблокировать прокрутку
+                numberInHeader.style.display = 'block'; // Show number_in_header when burger is closed
+            }
+        });
+    </script>
+</body>
+</html>
