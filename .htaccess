@@ -1,0 +1,12 @@
+RewriteEngine On
+
+# Перенаправление со старого URL на новый
+RewriteRule ^code/News\.html$ /news [R=301,L]
+
+# Скрытие .html расширения для news
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# Специальное правило для страницы новостей
+RewriteRule ^news/?$ /code/News.html [NC,L]
